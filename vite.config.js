@@ -10,4 +10,10 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    open: true
+  },
+  /*scripts: {
+  "dev": "browser-launcher chrome http://localhost:5173"
+}*/
 })
