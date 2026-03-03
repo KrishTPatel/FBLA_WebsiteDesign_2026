@@ -1,5 +1,6 @@
 import React from 'react';
-import { NAV_ITEMS } from '../data/constants';
+import { NAV_ITEMS } from '../../data/constants';
+import './Sidebar.css';
 
 export default function Sidebar({ active, setActive, collapsed }) {
   return (
@@ -9,7 +10,7 @@ export default function Sidebar({ active, setActive, collapsed }) {
         <div className="logo-sub">Learning Hub</div>
       </div>
 
-      <div className="nav-section">
+      <nav className="nav-section">
         <div className="nav-label">Main Menu</div>
         {NAV_ITEMS.map((item) => (
           <div
@@ -21,12 +22,12 @@ export default function Sidebar({ active, setActive, collapsed }) {
             {item.label}
           </div>
         ))}
-      </div>
+      </nav>
 
       <div className="avatar-zone">
-        <div className="avatar-circle">ST</div>
+        <div className="avatar-circle">KP</div>
         <div className="avatar-info">
-          <div className="avatar-name">Student User</div>
+          <div className="avatar-name">User Name</div>
           <div className="avatar-rank">Level 12</div>
         </div>
       </div>

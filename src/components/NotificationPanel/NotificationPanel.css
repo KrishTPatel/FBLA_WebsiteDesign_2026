@@ -1,0 +1,26 @@
+.notif-panel {
+  position: absolute;
+  top: 80px;      /* Pushes it below the TopBar */
+  right: 0;       /* Aligns it to the right side of the bell */
+  width: 450px;   /* Big for 2x scale */
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  z-index: 1000;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.notif-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 999; /* Just below the panel */
+}
+
+.notif-item {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}

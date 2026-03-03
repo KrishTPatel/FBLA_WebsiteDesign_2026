@@ -1,0 +1,111 @@
+.sidebar {
+  width: 400px;
+  min-height: 100vh;
+  background: var(--bg2);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  transition: transform .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.sidebar.hidden {
+  transform: translateX(-440px);
+}
+
+/* Logo Area */
+.logo-zone {
+  padding: 56px 40px 40px;;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo-mark {
+  font-family: var(--font-head);
+  font-size: 64px;
+  color: var(--lime);
+  line-height: 1;
+}
+
+.logo-sub {
+  font-size: 20px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  letter-spacing: 4px;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+/* Navigation Items */
+.nav-section {
+  padding: 32px 24px 0;
+  flex: 1;
+}
+
+.nav-label {
+  font-size: 18px;
+  font-family: var(--font-mono);
+  letter-spacing: 6px;
+  color: var(--muted);
+  text-transform: uppercase;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 6px;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: all .18s ease;
+}
+
+.nav-item:hover {
+  color: var(--text);
+  background: var(--faint);
+}
+
+.nav-item.active {
+  color: var(--bg);
+  background: var(--lime);
+  font-weight: 600;
+}
+
+.nav-item .icon {
+  font-size: 32px;
+}
+
+/* User Profile Section */
+.avatar-zone {
+  padding: 32px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar-circle {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--lime), #2dd4bf);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--bg);
+}
+
+.avatar-info { min-width: 0; }
+.avatar-name { font-size: 26px; font-weight: 600; }
+.avatar-rank { font-size: 20px; color: var(--lime); font-family: var(--font-mono); }

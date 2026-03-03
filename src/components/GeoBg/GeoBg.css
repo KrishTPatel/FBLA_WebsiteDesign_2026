@@ -1,0 +1,51 @@
+.geo-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* Keep it behind everything */
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--bg);
+}
+
+/* Big Glowing Circles */
+.geo-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(200, 241, 53, 0.05);
+}
+
+.c1 {
+  width: 1200px;
+  height: 1200px;
+  top: -200px;
+  right: -300px;
+  background: radial-gradient(circle, rgba(200, 241, 53, 0.03) 0%, transparent 70%);
+}
+
+.c2 {
+  width: 800px;
+  height: 800px;
+  bottom: -100px;
+  left: -200px;
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.02) 0%, transparent 70%);
+}
+
+/* Math Symbols Styling */
+.math-sym {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 2.5rem; /* ~80px at 32px root */
+  color: var(--lime);
+  opacity: 0.07;
+  user-select: none;
+  animation: floatAnim infinite ease-in-out;
+}
+
+@keyframes floatAnim {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-40px) rotate(10deg);
+  }
+}
