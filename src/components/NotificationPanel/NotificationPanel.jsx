@@ -14,7 +14,7 @@ export default function NotificationPanel({ closePanel }) {
       
       <div className="notif-panel">
         <div className="notif-header">
-          <div className="h4">Notifications</div>
+          <div className="lock-in">Notifications</div>
         </div>
         <div className="notif-body">
           {notifications.map(notif => (

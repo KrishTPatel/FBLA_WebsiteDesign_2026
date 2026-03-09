@@ -14,7 +14,7 @@ export default function DashboardPage() {
             <span className="badge badge-lime">🔥 Top 10% this week</span>
             <span className="badge badge-teal">🔥 14 Day Streak</span>
           </div>
-          <div className="h1">Welcome back,<br /><span className="lime">Math Student!</span></div>
+          <div className="h1">Welcome back,<br /><span className="lime">Harshal Khande!</span></div>
           <div className="body" style={{ marginTop: 10, maxWidth: 480 }}>
             You've completed <strong style={{ color: "var(--text)" }}>3 lessons</strong> this week. Your next tutoring session starts in <strong style={{ color: "var(--lime)" }}>2 hours</strong>. Keep it up!
           </div>

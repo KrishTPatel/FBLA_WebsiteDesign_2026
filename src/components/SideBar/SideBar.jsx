@@ -6,7 +6,7 @@ export default function Sidebar({ active, setActive, collapsed }) {
   return (
     <aside className={`sidebar ${collapsed ? "hidden" : ""}`}>
       <div className="logo-zone">
-        <div className="logo-mark">MathHive</div>
+        <div className="logo-mark">StudyLink</div>
         <div className="logo-sub">Learning Hub</div>
       </div>
 
@@ -25,9 +25,9 @@ export default function Sidebar({ active, setActive, collapsed }) {
       </nav>
 
       <div className="avatar-zone">
-        <div className="avatar-circle">KP</div>
+        <div className="avatar-circle">HK</div>
         <div className="avatar-info">
-          <div className="avatar-name">User Name</div>
+          <div className="avatar-name">Harshal Khande</div>
           <div className="avatar-rank">Level 12</div>
         </div>
       </div>

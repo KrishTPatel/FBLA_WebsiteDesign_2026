@@ -69,3 +69,14 @@
   right: 8px;
   border: 3px solid var(--bg);
 }
+.theme-toggle {
+  width: 2.25rem; height: 2.25rem; border-radius: 50%;
+  background: var(--card); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: 16px;
+  transition: all .2s;
+}
+.theme-toggle:hover { 
+  background: var(--faint); 
+  transform: rotate(180deg);
+}
